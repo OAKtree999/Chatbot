@@ -1,0 +1,5 @@
+streamlit==0.86.0
+streamlit-chat==0.0.2.1
+pandas==1.4.2
+sentence-transformers==2.2.0
+scikit-learn==1.0.2
