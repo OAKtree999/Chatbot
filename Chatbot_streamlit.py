@@ -27,7 +27,7 @@ model = cached_model()
 df = get_dataset()
 
 st.header('심리 상담 챗봇') # streamlit 해더
-st.markdown('**상담사 온안국**') 
+st.markdown('**상담사 안국봇**') 
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
