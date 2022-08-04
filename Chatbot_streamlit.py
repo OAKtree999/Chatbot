@@ -22,8 +22,8 @@ def get_dataset():
 model = cached_model()
 df = get_dataset()
 
-st.header('심리 상담 챗봇') # streamlit 해더
-st.markdown('**상담사 안국봇**') # 
+st.header('심리 상담 챗봇 테스트 중') # streamlit 해더
+st.markdown('**상담사 타오른다봇**') # 
 
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
@@ -34,7 +34,7 @@ if 'past' not in st.session_state:
 
 with st.form('form', clear_on_submit=True):
     user_input = st.text_input('하고싶은 말을 적어보세요: ', '', key="input")
-    submitted = st.form_submit_button('상담받기')
+    submitted = st.form_submit_button('상담 받기')
 
 if submitted and user_input:
     embedding = model.encode(user_input)
